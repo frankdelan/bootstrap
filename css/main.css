@@ -1,0 +1,310 @@
+/* Спецификация */
+
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 700;
+    color: #000
+}
+
+h3 {
+    font-weight: 400;
+}
+
+h2 {
+    text-align: center;
+}
+
+.title {
+    padding-top: 100px;
+    padding-bottom:70px;
+    text-align: center;
+}
+
+.title__main {
+    font-size: 32px;
+    color: black;
+}
+
+.title__text {
+    font-size: 20px;
+    width: 780px;
+    margin: 0 auto;
+}
+
+
+/* Первый экран */
+
+.header {
+    background: white;
+    color: #010101;
+    padding-top:58px;
+    padding-bottom: 105px;
+}
+.logo{
+    width: 100%;
+}
+.menu {
+    margin-top:8px;
+}
+
+.active
+{
+    color: rgb(187, 0, 0) !important;
+}
+.menu__item {
+    margin: 0 30px;
+    transition: all;
+    transition-delay: 0.2s;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+.menu__item a:hover{
+    color:rgb(255, 0, 0);
+    transition: all;
+    transition-delay: 0.2s;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+.menu__item a {
+    font-size:22px;
+    font-weight:700;
+    color: rgb(170, 170, 170);
+    transition: all;
+    transition-delay: 0.2s;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+.offer {
+    margin-top:117px;
+}
+
+.offer__title {
+    font-size:32px;
+    margin-bottom: 15px;
+}
+
+.offer__intro {
+    font-size: 20px;
+    line-height: 1.3em;
+}
+
+.offer__text {
+    font-size: 16px;
+    margin-top:15px;
+    color: #555555;
+    width: 400px;
+    margin-bottom: 30px;
+}
+.fa-arrow-circle-down{
+    font-size: 50px;
+    color: #555555;
+    transition: all 0.3s 0.2s ease;
+}
+.fa-arrow-circle-down:hover{
+    color:rgb(255, 0, 0);
+    transition: all 0.6s 0.2s ease;
+}
+
+.picture {
+    display: block;
+    margin: 60px auto 0;
+    width: 100%;
+    box-shadow: 0px 0px 45px -2px rgba(0,0,0,0.75);
+}
+
+/* Второй экран */
+.features
+{
+    background-color: rgb(194, 191, 191);
+}
+.feature {
+    margin-bottom: 65px;
+}
+
+.feature__icon {
+    font-size: 50px;
+    margin-right: 37px;
+    color: #000
+}
+.feature__icon:hover{
+    color: rgb(255, 0, 0);
+}
+
+.feature__text {
+    color: #706f6f
+}
+/* Третий экран */
+.gallery{
+    background-color: rgb(58, 57, 57);
+}
+.gallery__picture{
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    border: 5px ridge white;
+}
+.gallery__works{
+    margin-top: 90px;
+    margin-bottom: 20px;
+    color:white;
+    font-size: 32px;
+}
+.card-columns{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+/* Четвертый экран */
+
+.touch {
+    background: rgb(27, 27, 27);
+    color: #fff;
+}
+.titletwo__main{
+    margin-top: 60px;
+    color: #c00000;
+    font-size: 32px;
+}
+.title__text{
+    margin-bottom: 20px;
+}
+
+.form {
+    text-align: center;
+}
+
+.form__input {
+    background: #fff;
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+    border-radius: 5px;
+    width: 580px;
+    padding: 14px 0;
+    margin-right:21px;
+    border: 0;
+    padding-left:23px;
+    outline: none;
+}
+
+.form__btn {
+    font-family: 'PT Sans', sans-serif;
+    background: #cf5555;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    width: 126px;
+    border: 0;
+    padding: 14px 0;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Футер */
+
+.footer {
+    background: rgb(27, 27, 27);
+    padding:50px 0 70px;
+}
+
+.credits {
+    color: #fff;
+    font-size: 16px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+}
+.icons__item{
+    padding: 20px;
+    font-size: 40px;
+    color: rgb(243, 6, 6);
+}
+.map{
+    justify-content: center;
+}
+.icons__item__style{
+    color: red !important;
+}
+iframe{ 
+    height: 500px;
+    width: 850px;
+}
+
+
+/* Медиа-запросы */
+
+@media screen and (max-width: 992px) {
+    .logo {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .offer {
+        text-align: center;
+    }
+    .offer__text {
+        margin: 20px auto;
+        width: auto;
+    }
+    .form__input {
+        margin-right:0;
+        width: 100%;
+    }
+    .form__btn {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .titletwo__text {
+        width: auto;
+    }
+    .title__text{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    
+    .picture {
+        width: 100%;
+    }
+    .menu {
+        flex-direction: column;
+    }
+    .menu__item {
+        text-align: center;
+        margin-bottom:10px;
+    }
+
+}
+@media screen and (max-width: 865px)
+{
+    iframe{
+        width: 600px;
+        height: 450px;
+    }
+}
+@media screen and (max-width: 624px)
+{
+    iframe{
+        height: 450px;
+        width: 100%;
+    }
+}
